@@ -1,6 +1,5 @@
 {% set name = "xagg" %}
-{% set version = "0.2.5" %}
-
+{% set version = "0.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -8,26 +7,26 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xagg-{{ version }}.tar.gz
-  sha256: b81d54c71d9a92a4834f77668aec17e6dfb5eac4c61850cb70f4579bbf7df266
+  sha256: b4ea7e975939187e1486e1260cb428c3182f384eb74a194a2041c6a763ef1898
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - python >=3.6
     - pip
-    - setuptools_scm
-  run:
     - python >=3.6
+    - setuptools-scm
+  run:
     - cf_xarray >=0.5.1
     - esmpy >=8.1.0
     - geopandas
     - netcdf4
     - numpy
     - pandas
+    - python >=3.6
     - requests
     - scipy
     - shapely
@@ -45,9 +44,9 @@ test:
 about:
   home: https://github.com/ks905383/xagg
   summary: Aggregating raster data over polygons
-  license: GPL-3.0-or-later
+  license: GPL-3.0
   license_file: LICENSE
 
 extra:
   recipe-maintainers:
-    - raybellwaves
+    - ks905383
