@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@ks905383](https://github.com/ks905383/)
+* [@raybellwaves](https://github.com/raybellwaves/)
 
