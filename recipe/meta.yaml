@@ -32,6 +32,7 @@ requirements:
     - shapely
     - xarray
     - xesmf >=0.5.2
+    - numba
 
 test:
   imports:
