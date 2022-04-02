@@ -1,5 +1,5 @@
 {% set name = "xagg" %}
-{% set version = "0.2.6" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xagg-{{ version }}.tar.gz
-  sha256: b4ea7e975939187e1486e1260cb428c3182f384eb74a194a2041c6a763ef1898
+  sha256: ce6c946c7b8618e2e760ff48e0269c9d5617757165b94f8448fe1cc8e7576984
 
 build:
   noarch: python
@@ -26,13 +26,13 @@ requirements:
     - netcdf4
     - numpy
     - pandas
+    - pytables
     - python >=3.6
     - requests
     - scipy
     - shapely
     - xarray
     - xesmf >=0.5.2
-    - numba
 
 test:
   imports:
@@ -51,4 +51,3 @@ about:
 extra:
   recipe-maintainers:
     - ks905383
-    - raybellwaves
