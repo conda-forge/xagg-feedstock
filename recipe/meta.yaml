@@ -1,5 +1,5 @@
 {% set name = "xagg" %}
-{% set version = "0.2.6" %}
+{% set version = "0.3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xagg-{{ version }}.tar.gz
-  sha256: b4ea7e975939187e1486e1260cb428c3182f384eb74a194a2041c6a763ef1898
+  sha256: 41d7c3ae826037ab24b9a76ff40468be94c6ad3c08b222cc6a12650de652e810
 
 build:
   noarch: python
