@@ -33,6 +33,7 @@ requirements:
     - pytables
     - xarray
     - xesmf >=0.5.2
+    - numba
 
 test:
   imports:
