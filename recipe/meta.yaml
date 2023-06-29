@@ -30,7 +30,7 @@ requirements:
     - shapely
     - pytables
     - xesmf >=0.5.2
-    - cf_xarray >=0.5.1
+    - cf_xarray >=0.7.1
     - esmpy >=8.1.0
     - requests
 
