@@ -16,24 +16,23 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.6
     - setuptools-scm
+    - pip
   run:
-    - cf_xarray >=0.5.1
-    - esmpy >=8.1.0
-    - geopandas
-    - netcdf4
-    - numpy
-    - pandas
     - python >=3.6
-    - requests
+    - numpy
     - scipy
+    - xarray
+    - pandas
+    - netcdf4
+    - geopandas
     - shapely
     - pytables
-    - xarray
     - xesmf >=0.5.2
-    - numba
+    - cf_xarray >=0.5.1
+    - esmpy >=8.1.0
+    - requests
 
 test:
   imports:
