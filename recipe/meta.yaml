@@ -1,5 +1,5 @@
 {% set name = "xagg" %}
-{% set version = "0.3.0.2" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xagg-{{ version }}.tar.gz
-  sha256: 5679ec250a91751fc06bb808cee62c4751850004c54123c56f3db82f5c8eb7e2
+  sha256: 42285ff07ee78a3e5cd0bbae8b952bd3f94efef9f1134e44e2b3ae8971fc12ec
 
 build:
   noarch: python
@@ -26,11 +26,11 @@ requirements:
     - xarray
     - pandas
     - netcdf4
-    - geopandas
+    - geopandas >=0.12.0
     - shapely
     - pytables
-    - xesmf >=0.5.2
-    - cf_xarray >=0.7.1
+    - xesmf >=0.7.1
+    - cf_xarray >=0.5.1
     - esmpy >=8.1.0
     - requests
 
