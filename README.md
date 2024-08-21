@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xagg-feedstock/
 
 Home: https://github.com/ks905383/xagg
 
-Package license: GPL-3.0
+Package license: GPL-3.0-only
 
 Summary: Aggregating raster data over polygons
 
@@ -15,7 +15,7 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13074&branchName=main">
         <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/xagg-feedstock?branchName=main">
       </a>
     </td>
